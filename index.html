@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeautyBase</title>
+    <title>BeautyBase | Makyaj Ürünleri</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
+    <header class="header">
         <h1>💄 BeautyBase</h1>
         <p>Makyaj Ürünleri Bilgi Sistemi</p>
     </header>
 
-    <main>
-        <h2>Hoş Geldiniz</h2>
-        <p>Bu uygulamada makyaj ürünlerini inceleyebilir, arayabilir ve detaylarını görüntüleyebilirsiniz.</p>
+    <main class="container">
 
+        <!-- Arama Kutusu -->
+        <input
+            type="text"
+            id="arama"
+            placeholder="🔍 Ürün veya marka ara...">
+
+        <!-- Kategoriler -->
+        <div class="kategoriler">
+
+            <button class="kategori-btn">Tümü</button>
+
+            <button class="kategori-btn">💋 Dudak</button>
+
+            <button class="kategori-btn">👁️ Göz</button>
+
+            <button class="kategori-btn">😊 Yüz</button>
+
+            <button class="kategori-btn">💅 Tırnak</button>
+
+        </div>
+
+        <!-- Ürünler Buraya Gelecek -->
         <div id="urunler"></div>
+
     </main>
-    <input
-    type="text"
-    id="arama"
-    placeholder="Ürün veya marka ara...">
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
