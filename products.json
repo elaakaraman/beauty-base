@@ -1,1 +1,32 @@
-
+[
+  {
+    "id": 1,
+    "urunAdi": "Lifter Gloss",
+    "marka": "Maybelline",
+    "kategori": "Dudak",
+    "fiyat": 399,
+    "puan": 4.8,
+    "aciklama": "Parlak dudak görünümü sağlar.",
+    "resim": "images/lifter-gloss.jpg"
+  },
+  {
+    "id": 2,
+    "urunAdi": "Sky High Maskara",
+    "marka": "Maybelline",
+    "kategori": "Göz",
+    "fiyat": 549,
+    "puan": 4.9,
+    "aciklama": "Kirpikleri uzatır ve hacim kazandırır.",
+    "resim": "images/sky-high.jpg"
+  },
+  {
+    "id": 3,
+    "urunAdi": "Fit Me Fondöten",
+    "marka": "Maybelline",
+    "kategori": "Yüz",
+    "fiyat": 499,
+    "puan": 4.7,
+    "aciklama": "Doğal ve mat bir bitiş sunar.",
+    "resim": "images/fit-me.jpg"
+  }
+]
