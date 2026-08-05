@@ -3,51 +3,72 @@ const aramaKutusu = document.getElementById("arama");
 
 let tumUrunler = [];
 
+// Ürünleri JSON dosyasından oku
 fetch("products.json")
-  .then(response => response.json())
-  .then(veriler => {
-    tumUrunler = veriler;
-    urunleriGoster(tumUrunler);
-  });
+    .then(response => response.json())
+    .then(data => {
+        tumUrunler = data;
+        urunleriGoster(tumUrunler);
+    })
+    .catch(error => {
+        urunlerAlani.innerHTML = "<h2>Ürünler yüklenemedi.</h2>";
+        console.error(error);
+    });
 
+// Ürünleri ekrana yazdır
 function urunleriGoster(liste) {
 
-  urunlerAlani.innerHTML = "";
+    urunlerAlani.innerHTML = "";
 
-  liste.forEach(urun => {
+    liste.forEach(urun => {
 
-    urunlerAlani.innerHTML += `
-      <div class="urun-kart">
-        <h2>${urun.urunAdi}</h2>
+        urunlerAlani.innerHTML += `
+            <div class="urun-kart">
 
-        <p><b>Marka:</b> ${urun.marka}</p>
+                <img src="${urun.resim}" alt="${urun.urunAdi}">
 
-        <p><b>Kategori:</b> ${urun.kategori}</p>
+                <div class="urun-bilgi">
 
-        <p><b>Fiyat:</b> ${urun.fiyat} TL</p>
+                    <h2>${urun.urunAdi}</h2>
 
-        <p><b>Puan:</b> ⭐ ${urun.puan}</p>
+                    <p><strong>Marka:</strong> ${urun.marka}</p>
 
-        <p>${urun.aciklama}</p>
-      </div>
-    `;
+                    <p><strong>Kategori:</strong> ${urun.kategori}</p>
 
-  });
+                    <p>⭐ ${urun.puan}</p>
+
+                    <p>${urun.aciklama}</p>
+
+                    <p class="fiyat">${urun.fiyat} TL</p>
+
+                    <button class="detay-btn">
+                        Detayları Gör
+                    </button>
+
+                </div>
+
+            </div>
+        `;
+
+    });
 
 }
 
+// Arama
 aramaKutusu.addEventListener("input", function () {
 
-  const kelime = this.value.toLowerCase();
+    const kelime = this.value.toLowerCase();
 
-  const filtre = tumUrunler.filter(urun =>
+    const filtrelenmis = tumUrunler.filter(urun => {
 
-    urun.urunAdi.toLowerCase().includes(kelime) ||
+        return (
+            urun.urunAdi.toLowerCase().includes(kelime) ||
+            urun.marka.toLowerCase().includes(kelime) ||
+            urun.kategori.toLowerCase().includes(kelime)
+        );
 
-    urun.marka.toLowerCase().includes(kelime)
+    });
 
-  );
-
-  urunleriGoster(filtre);
+    urunleriGoster(filtrelenmis);
 
 });
