@@ -1,27 +1,53 @@
 const urunlerAlani = document.getElementById("urunler");
+const aramaKutusu = document.getElementById("arama");
+
+let tumUrunler = [];
 
 fetch("products.json")
   .then(response => response.json())
-  .then(urunler => {
+  .then(veriler => {
+    tumUrunler = veriler;
+    urunleriGoster(tumUrunler);
+  });
 
-    urunler.forEach(urun => {
+function urunleriGoster(liste) {
 
-      urunlerAlani.innerHTML += `
-        <div class="urun-kart">
-          <h2>${urun.urunAdi}</h2>
+  urunlerAlani.innerHTML = "";
 
-          <p><b>Marka:</b> ${urun.marka}</p>
+  liste.forEach(urun => {
 
-          <p><b>Kategori:</b> ${urun.kategori}</p>
+    urunlerAlani.innerHTML += `
+      <div class="urun-kart">
+        <h2>${urun.urunAdi}</h2>
 
-          <p><b>Fiyat:</b> ${urun.fiyat} TL</p>
+        <p><b>Marka:</b> ${urun.marka}</p>
 
-          <p><b>Puan:</b> ⭐ ${urun.puan}</p>
+        <p><b>Kategori:</b> ${urun.kategori}</p>
 
-          <p>${urun.aciklama}</p>
-        </div>
-      `;
+        <p><b>Fiyat:</b> ${urun.fiyat} TL</p>
 
-    });
+        <p><b>Puan:</b> ⭐ ${urun.puan}</p>
+
+        <p>${urun.aciklama}</p>
+      </div>
+    `;
 
   });
+
+}
+
+aramaKutusu.addEventListener("input", function () {
+
+  const kelime = this.value.toLowerCase();
+
+  const filtre = tumUrunler.filter(urun =>
+
+    urun.urunAdi.toLowerCase().includes(kelime) ||
+
+    urun.marka.toLowerCase().includes(kelime)
+
+  );
+
+  urunleriGoster(filtre);
+
+});
