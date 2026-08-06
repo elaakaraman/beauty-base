@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "urunAdi": "Kaldırıcı Parlaklık",
+    "urunAdi": "Lifter Gloss",
     "marka": "Maybelline",
     "kategori": "Dudak",
     "fiyat": 399,
     "puan": 4.8,
     "aciklama": "Parlak dudak görünümü sağlar.",
-    "resim": "images/lifter-gloss.jpg"
+    "resim": "images/products/lifter-gloss.jpg"
   },
   {
     "id": 2,
@@ -16,8 +16,8 @@
     "kategori": "Göz",
     "fiyat": 549,
     "puan": 4.9,
-    "aciklama": "Kirpikleri uzatır ve hacim kazandırır.",
-    "resim": "images/sky-high.jpg"
+    "aciklama": "Kirpikleri uzatır ve hacim verir.",
+    "resim": "images/products/sky-high.jpg"
   },
   {
     "id": 3,
@@ -26,7 +26,77 @@
     "kategori": "Yüz",
     "fiyat": 499,
     "puan": 4.7,
-    "aciklama": "Doğal ve mat bir bitiş sunar.",
-    "resim": "images/fit-me.jpg"
+    "aciklama": "Doğal mat görünüm sağlar.",
+    "resim": "images/products/fit-me.jpg"
+  },
+  {
+    "id": 4,
+    "urunAdi": "Telescopic Maskara",
+    "marka": "L'Oréal Paris",
+    "kategori": "Göz",
+    "fiyat": 589,
+    "puan": 4.8,
+    "aciklama": "Uzun ve belirgin kirpikler.",
+    "resim": "images/products/telescopic.jpg"
+  },
+  {
+    "id": 5,
+    "urunAdi": "True Match Fondöten",
+    "marka": "L'Oréal Paris",
+    "kategori": "Yüz",
+    "fiyat": 629,
+    "puan": 4.9,
+    "aciklama": "Cilt tonuna uyum sağlar.",
+    "resim": "images/products/true-match.jpg"
+  },
+  {
+    "id": 6,
+    "urunAdi": "Soft Matte Lip Cream",
+    "marka": "NYX",
+    "kategori": "Dudak",
+    "fiyat": 449,
+    "puan": 4.8,
+    "aciklama": "Kadifemsi mat bitiş.",
+    "resim": "images/products/soft-matte.jpg"
+  },
+  {
+    "id": 7,
+    "urunAdi": "Lash Princess",
+    "marka": "Essence",
+    "kategori": "Göz",
+    "fiyat": 279,
+    "puan": 4.9,
+    "aciklama": "Hacimli kirpik görünümü.",
+    "resim": "images/products/lash-princess.jpg"
+  },
+  {
+    "id": 8,
+    "urunAdi": "Longstay Liquid Matte",
+    "marka": "Golden Rose",
+    "kategori": "Dudak",
+    "fiyat": 299,
+    "puan": 4.7,
+    "aciklama": "Kalıcı mat ruj.",
+    "resim": "images/products/golden-rose.jpg"
+  },
+  {
+    "id": 9,
+    "urunAdi": "Perfect Coverage",
+    "marka": "Flormar",
+    "kategori": "Yüz",
+    "fiyat": 389,
+    "puan": 4.6,
+    "aciklama": "Yüksek kapatıcılık sunar.",
+    "resim": "images/products/flormar.jpg"
+  },
+  {
+    "id": 10,
+    "urunAdi": "Show Your Power Maskara",
+    "marka": "Pastel",
+    "kategori": "Göz",
+    "fiyat": 259,
+    "puan": 4.5,
+    "aciklama": "Yoğun siyah kirpik görünümü.",
+    "resim": "images/products/pastel.jpg"
   }
 ]
