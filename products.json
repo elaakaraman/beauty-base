@@ -7,7 +7,7 @@
     "fiyat": 399,
     "puan": 4.8,
     "aciklama": "Parlak dudak görünümü sağlar.",
-    "resim": "images/products/lifter-gloss.jpg"
+    "resim": "images/lifter-gloss.jpg"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "fiyat": 549,
     "puan": 4.9,
     "aciklama": "Kirpikleri uzatır ve hacim verir.",
-    "resim": "images/products/sky-high.jpg"
+    "resim": "images/sky-high.jpg"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "fiyat": 499,
     "puan": 4.7,
     "aciklama": "Doğal mat görünüm sağlar.",
-    "resim": "images/products/fit-me.jpg"
+    "resim": "images/fit-me.jpg"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "fiyat": 589,
     "puan": 4.8,
     "aciklama": "Uzun ve belirgin kirpikler.",
-    "resim": "images/products/telescopic.jpg"
+    "resim": "images/telescopic.jpg"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "fiyat": 629,
     "puan": 4.9,
     "aciklama": "Cilt tonuna uyum sağlar.",
-    "resim": "images/products/true-match.jpg"
+    "resim": "images/true-match.jpg"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "fiyat": 449,
     "puan": 4.8,
     "aciklama": "Kadifemsi mat bitiş.",
-    "resim": "images/products/soft-matte.jpg"
+    "resim": "images/soft-matte.jpg"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "fiyat": 279,
     "puan": 4.9,
     "aciklama": "Hacimli kirpik görünümü.",
-    "resim": "images/products/lash-princess.jpg"
+    "resim": "images/lash-princess.jpg"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "fiyat": 299,
     "puan": 4.7,
     "aciklama": "Kalıcı mat ruj.",
-    "resim": "images/products/golden-rose.jpg"
+    "resim": "images/golden-rose.jpg"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "fiyat": 389,
     "puan": 4.6,
     "aciklama": "Yüksek kapatıcılık sunar.",
-    "resim": "images/products/flormar.jpg"
+    "resim": "images/flormar.jpg"
   },
   {
     "id": 10,
@@ -97,6 +97,6 @@
     "fiyat": 259,
     "puan": 4.5,
     "aciklama": "Yoğun siyah kirpik görünümü.",
-    "resim": "images/products/pastel.jpg"
+    "resim": "images/pastel.jpg"
   }
 ]
