@@ -349,3 +349,54 @@ nav a:hover::after {
         font-size: 16px;
     }
 }
+   /* =========================================
+   BEAUTYBASE HERO - SON DÜZENLEME
+========================================= */
+
+@media (min-width: 701px) {
+
+    .hero {
+        display: grid !important;
+
+        grid-template-columns: 45% 55% !important;
+
+        align-items: center !important;
+
+        gap: 40px !important;
+
+        min-height: 620px !important;
+
+        padding: 60px 7% !important;
+    }
+
+    .hero-yazi {
+        width: 100% !important;
+
+        max-width: 600px !important;
+    }
+
+    .hero h1 {
+        font-size: 70px !important;
+
+        line-height: 0.98 !important;
+    }
+
+    .hero-gorsel {
+        display: block !important;
+
+        width: 100% !important;
+
+        height: 500px !important;
+
+        overflow: hidden !important;
+    }
+
+    .hero-gorsel img {
+        width: 100% !important;
+
+        height: 100% !important;
+
+        object-fit: cover !important;
+    }
+
+}
