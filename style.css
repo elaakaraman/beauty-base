@@ -1,6 +1,6 @@
-/* =====================================
-   BEAUTYBASE - TEMEL
-===================================== */
+/* =========================================
+   GENEL
+========================================= */
 
 * {
     margin: 0;
@@ -19,13 +19,12 @@ body {
 }
 
 
-/* =====================================
+/* =========================================
    HEADER
-===================================== */
+========================================= */
 
 header {
-    width: 100%;
-    min-height: 86px;
+    height: 86px;
     background: white;
     border-bottom: 1px solid #e5e5e5;
 
@@ -33,7 +32,7 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    padding: 20px 6%;
+    padding: 0 6%;
 
     position: sticky;
     top: 0;
@@ -44,7 +43,6 @@ header {
     font-size: 25px;
     letter-spacing: 5px;
     font-weight: 700;
-    white-space: nowrap;
 }
 
 .logo span {
@@ -57,8 +55,8 @@ nav {
 }
 
 nav a {
-    color: #222;
     text-decoration: none;
+    color: #222;
     font-size: 14px;
 }
 
@@ -67,9 +65,9 @@ nav a:hover {
 }
 
 
-/* =====================================
+/* =========================================
    ARAMA
-===================================== */
+========================================= */
 
 .arama {
     display: flex;
@@ -97,24 +95,22 @@ nav a:hover {
 }
 
 
-/* =====================================
+/* =========================================
    HERO
-===================================== */
+========================================= */
 
 .hero {
-    width: 100%;
-
     min-height: 620px;
 
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
-    gap: 50px;
-
     align-items: center;
 
-    padding: 70px 7%;
+    gap: 50px;
+
+    padding: 60px 7%;
 
     background: #f3eee9;
 }
@@ -131,13 +127,13 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-family: Georgia, serif;
+    font-family: Georgia, "Times New Roman", serif;
 
     font-size: 70px;
 
-    font-weight: 400;
+    line-height: 0.98;
 
-    line-height: 1;
+    font-weight: 400;
 
     margin-bottom: 30px;
 }
@@ -148,8 +144,6 @@ nav a:hover {
     color: #a97f78;
 
     font-style: italic;
-
-    margin-top: 10px;
 }
 
 .hero-yazi p {
@@ -173,7 +167,7 @@ nav a:hover {
 
     text-decoration: none;
 
-    font-size: 12px;
+    font-size: 11px;
 
     letter-spacing: 2px;
 }
@@ -183,59 +177,32 @@ nav a:hover {
 }
 
 
-/* =====================================
-   HERO RESİM
-===================================== */
+/* =========================================
+   HERO GÖRSEL
+========================================= */
 
 .hero-gorsel {
     width: 100%;
     height: 500px;
 
-    position: relative;
-
     overflow: hidden;
+
+    position: relative;
 }
 
 .hero-gorsel img {
     width: 100%;
     height: 100%;
 
-    display: block;
-
     object-fit: cover;
-}
 
-.hero-kart {
-    position: absolute;
-
-    left: 20px;
-    bottom: 20px;
-
-    background: white;
-
-    padding: 18px 20px;
-}
-
-.hero-kart span {
     display: block;
-
-    font-size: 10px;
-
-    letter-spacing: 2px;
-
-    color: #777;
-
-    margin-bottom: 7px;
-}
-
-.hero-kart strong {
-    font-size: 18px;
 }
 
 
-/* =====================================
+/* =========================================
    KATEGORİLER
-===================================== */
+========================================= */
 
 .kategori-section {
     padding: 80px 7%;
@@ -247,10 +214,8 @@ nav a:hover {
 
 .section-etiket {
     font-size: 10px;
-
     letter-spacing: 4px;
-
-    color: #999;
+    color: #888;
 
     margin-bottom: 15px;
 }
@@ -290,7 +255,7 @@ nav a:hover {
 
     cursor: pointer;
 
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .kategoriler button:hover {
@@ -299,19 +264,13 @@ nav a:hover {
     color: white;
 }
 
-.kategori-icon {
-    margin-right: 8px;
-}
 
-
-/* =====================================
+/* =========================================
    ÜRÜNLER
-===================================== */
+========================================= */
 
 #urunler {
     padding: 80px 7%;
-
-    background: #faf9f7;
 }
 
 .baslik {
@@ -330,11 +289,11 @@ nav a:hover {
     font-size: 42px;
 
     font-weight: 400;
-
-    margin-bottom: 10px;
 }
 
 .urun-aciklama {
+    margin-top: 10px;
+
     color: #777;
 }
 
@@ -345,61 +304,61 @@ nav a:hover {
 }
 
 
-/* =====================================
-   ÜRÜN LİSTESİ
-===================================== */
+/* =========================================
+   ÜRÜN GRID
+========================================= */
 
 .urunler-container {
-    width: 100%;
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     gap: 25px;
+
+    width: 100%;
 }
 
 
-/* =====================================
+/* =========================================
    ÜRÜN KARTI
-===================================== */
+========================================= */
 
 .urun-karti {
-    position: relative;
 
     background: white;
 
-    border: 1px solid #e5e5e5;
+    border: 1px solid #e7e3df;
+
+    width: 100%;
+
+    min-width: 0;
 
     overflow: hidden;
 
-    transition: 0.3s;
-}
-
-.urun-karti:hover {
-    transform: translateY(-5px);
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    position: relative;
 }
 
 
-/* =====================================
-   ÜRÜN RESMİ
-===================================== */
+/* =========================================
+   ÜRÜN GÖRSELİ
+========================================= */
 
 .urun-gorsel-alani {
+
     width: 100%;
 
-    height: 360px;
+    height: 330px;
 
     position: relative;
 
     overflow: hidden;
 
-    background: #f2f2f2;
+    background: #f1eee9;
 }
 
 .urun-gorsel-alani img {
+
     width: 100%;
 
     height: 100%;
@@ -407,15 +366,25 @@ nav a:hover {
     display: block;
 
     object-fit: cover;
+
+    transition: 0.3s;
+}
+
+.urun-karti:hover img {
+    transform: scale(1.04);
 }
 
 
-/* ETİKET */
+/* =========================================
+   ETİKET
+========================================= */
 
 .urun-etiket {
+
     position: absolute;
 
     top: 15px;
+
     left: 15px;
 
     z-index: 5;
@@ -424,7 +393,7 @@ nav a:hover {
 
     color: white;
 
-    padding: 7px 10px;
+    padding: 8px 12px;
 
     font-size: 9px;
 
@@ -432,24 +401,27 @@ nav a:hover {
 }
 
 
-/* =====================================
-   ÜRÜN BİLGİ
-===================================== */
+/* =========================================
+   ÜRÜN BİLGİSİ
+========================================= */
 
 .urun-bilgi {
+
     padding: 22px;
 }
 
 .urun-marka {
+
     color: #888;
 
     font-size: 13px;
 
-    margin-bottom: 6px;
+    margin-bottom: 7px;
 }
 
 .urun-bilgi h3 {
-    font-size: 19px;
+
+    font-size: 18px;
 
     font-weight: 500;
 
@@ -457,33 +429,40 @@ nav a:hover {
 }
 
 .urun-puan {
-    margin-bottom: 10px;
 
     font-size: 14px;
+
+    margin-bottom: 12px;
 }
 
 .urun-puan span {
+
     letter-spacing: 2px;
 }
 
 .urun-puan b {
+
+    font-weight: 400;
+
     margin-left: 5px;
 }
 
 .fiyat {
-    font-size: 19px;
+
+    font-size: 18px;
 
     font-weight: 600;
 
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 
-/* =====================================
+/* =========================================
    DETAY BUTONU
-===================================== */
+========================================= */
 
 .detay-btn {
+
     width: 100%;
 
     height: 45px;
@@ -494,23 +473,25 @@ nav a:hover {
 
     cursor: pointer;
 
-    font-size: 11px;
+    letter-spacing: 1px;
 
-    letter-spacing: 2px;
+    font-size: 11px;
 }
 
 .detay-btn:hover {
+
     background: #111;
 
     color: white;
 }
 
 
-/* =====================================
+/* =========================================
    ÜRÜN YOK
-===================================== */
+========================================= */
 
 .urun-yok {
+
     grid-column: 1 / -1;
 
     text-align: center;
@@ -527,16 +508,15 @@ nav a:hover {
 }
 
 
-/* =====================================
+/* =========================================
    MODAL
-===================================== */
+========================================= */
 
 .modal {
+
     display: none;
 
     position: fixed;
-
-    z-index: 2000;
 
     left: 0;
     top: 0;
@@ -544,34 +524,34 @@ nav a:hover {
     width: 100%;
     height: 100%;
 
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.55);
 
-    align-items: center;
     justify-content: center;
 
-    padding: 20px;
+    align-items: center;
+
+    z-index: 2000;
 }
 
 .modal-content {
-    position: relative;
-
-    width: 90%;
-    max-width: 700px;
-
-    max-height: 90vh;
-
-    overflow-y: auto;
 
     background: white;
 
-    padding: 35px;
+    width: 90%;
+
+    max-width: 700px;
+
+    padding: 40px;
+
+    position: relative;
 }
 
 .kapat {
+
     position: absolute;
 
-    right: 15px;
-    top: 10px;
+    right: 20px;
+    top: 15px;
 
     border: none;
 
@@ -583,11 +563,12 @@ nav a:hover {
 }
 
 
-/* =====================================
+/* =========================================
    NEWSLETTER
-===================================== */
+========================================= */
 
 .newsletter {
+
     padding: 80px 7%;
 
     background: #f3eee9;
@@ -596,9 +577,10 @@ nav a:hover {
 }
 
 .newsletter h2 {
+
     font-family: Georgia, serif;
 
-    font-size: 42px;
+    font-size: 40px;
 
     font-weight: 400;
 
@@ -606,12 +588,14 @@ nav a:hover {
 }
 
 .newsletter p {
+
     color: #777;
 
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .newsletter-form {
+
     display: flex;
 
     justify-content: center;
@@ -622,6 +606,7 @@ nav a:hover {
 }
 
 .newsletter-form input {
+
     flex: 1;
 
     height: 50px;
@@ -632,21 +617,23 @@ nav a:hover {
 }
 
 .newsletter-form button {
-    width: 120px;
+
+    width: 100px;
+
+    border: none;
 
     background: #111;
 
     color: white;
-
-    border: none;
 }
 
 
-/* =====================================
+/* =========================================
    FOOTER
-===================================== */
+========================================= */
 
 footer {
+
     background: #111;
 
     color: white;
@@ -655,26 +642,25 @@ footer {
 }
 
 .footer-ust {
-    display: grid;
 
-    grid-template-columns: 2fr 1fr 1fr;
+    display: flex;
 
-    gap: 50px;
+    justify-content: space-between;
 
-    padding-bottom: 50px;
+    gap: 40px;
+
+    margin-bottom: 50px;
 }
 
 .footer-logo {
+
     color: white;
-}
 
-.footer-ust p {
-    color: #aaa;
-
-    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .footer-menu {
+
     display: flex;
 
     flex-direction: column;
@@ -683,20 +669,26 @@ footer {
 }
 
 .footer-menu h3 {
-    margin-bottom: 10px;
+
+    margin-bottom: 8px;
 }
 
 .footer-menu a {
+
     color: #aaa;
 
     text-decoration: none;
+
+    font-size: 13px;
 }
 
 .footer-menu a:hover {
+
     color: white;
 }
 
 .footer-alt {
+
     border-top: 1px solid #333;
 
     padding-top: 20px;
@@ -705,103 +697,179 @@ footer {
 
     justify-content: space-between;
 
-    color: #777;
+    color: #888;
 
     font-size: 12px;
 }
 
 
-/* =====================================
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .urunler-container {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .hero h1 {
+
+        font-size: 55px;
+
+    }
+
+}
+
+
+/* =========================================
    TELEFON
-===================================== */
+========================================= */
 
 @media (max-width: 700px) {
 
     header {
+
+        height: auto;
+
+        min-height: 75px;
+
+        padding: 15px 20px;
+
         flex-wrap: wrap;
 
-        gap: 20px;
+        gap: 15px;
 
-        padding: 18px 20px;
+    }
+
+    .logo {
+
+        font-size: 20px;
+
     }
 
     nav {
+
         order: 3;
 
         width: 100%;
 
         justify-content: center;
 
-        gap: 20px;
+        gap: 25px;
+
+    }
+
+    .arama {
+
+        width: 100%;
+
     }
 
     .arama input {
-        width: 150px;
+
+        flex: 1;
+
+        width: auto;
+
     }
 
 
+    /* HERO */
+
     .hero {
+
         display: flex;
 
         flex-direction: column;
 
         padding: 45px 20px;
 
-        gap: 35px;
+        gap: 30px;
+
     }
 
     .hero h1 {
-        font-size: 48px;
+
+        font-size: 46px;
+
     }
 
     .hero-gorsel {
-        width: 100%;
 
         height: 350px;
+
     }
 
 
-    .kategori-section {
-        padding: 60px 20px;
-    }
-
+    /* ÜRÜNLER */
 
     #urunler {
-        padding: 60px 20px;
+
+        padding: 55px 20px;
+
     }
 
     .baslik {
+
         display: block;
+
     }
 
     #urunSayisi {
+
         display: block;
 
         margin-top: 15px;
+
     }
 
-
     .urunler-container {
+
         grid-template-columns: 1fr;
 
         gap: 25px;
+
     }
 
     .urun-gorsel-alani {
-        height: 380px;
+
+        height: 330px;
+
     }
 
 
-    .footer-ust {
-        grid-template-columns: 1fr;
+    /* KATEGORİ */
 
-        gap: 35px;
+    .kategori-section {
+
+        padding: 55px 20px;
+
+    }
+
+    .kategori-section h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    /* FOOTER */
+
+    .footer-ust {
+
+        flex-direction: column;
+
     }
 
     .footer-alt {
+
         flex-direction: column;
 
         gap: 10px;
+
     }
 
 }
