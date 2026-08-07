@@ -1,7 +1,3 @@
-/* =========================================
-   BEAUTYBASE ÜRÜNLER
-========================================= */
-
 const urunler = [
 
     {
@@ -13,7 +9,7 @@ const urunler = [
         puan: 4.8,
         etiket: "ÇOK SATAN",
         resim: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Ciltte doğal ve pürüzsüz bir görünüm sağlayan uzun süre kalıcı fondöten."
+        aciklama: "Ciltte doğal ve pürüzsüz bir görünüm sağlayan fondöten."
     },
 
     {
@@ -25,7 +21,7 @@ const urunler = [
         puan: 4.7,
         etiket: "YENİ",
         resim: "https://images.unsplash.com/photo-1583241800698-e8ab01830a07?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Yüze doğal ve canlı bir renk kazandıran ipeksi dokulu allık."
+        aciklama: "Yüze doğal ve canlı bir renk kazandıran allık."
     },
 
     {
@@ -37,7 +33,7 @@ const urunler = [
         puan: 4.9,
         etiket: "ÇOK SATAN",
         resim: "https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Cilde aydınlık ve ışıltılı bir görünüm veren highlighter."
+        aciklama: "Cilde aydınlık ve ışıltılı görünüm veren highlighter."
     },
 
     {
@@ -49,7 +45,7 @@ const urunler = [
         puan: 4.6,
         etiket: "YENİ",
         resim: "https://images.unsplash.com/photo-1631730486572-226d1d8d262a?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Kirpiklere belirginlik ve yoğun görünüm kazandıran maskara."
+        aciklama: "Kirpiklere belirginlik kazandıran maskara."
     },
 
     {
@@ -61,7 +57,7 @@ const urunler = [
         puan: 4.8,
         etiket: "",
         resim: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Günlük kullanıma uygun, kremsi yapıda nude tonlu ruj."
+        aciklama: "Günlük kullanıma uygun nude tonlu ruj."
     },
 
     {
@@ -73,7 +69,7 @@ const urunler = [
         puan: 4.9,
         etiket: "EXCLUSIVE",
         resim: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Günlük ve özel makyajlar için zengin renk seçeneklerine sahip far paleti."
+        aciklama: "Zengin renk seçeneklerine sahip far paleti."
     },
 
     {
@@ -85,7 +81,7 @@ const urunler = [
         puan: 4.7,
         etiket: "",
         resim: "https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Göz altı ve cilt kusurlarını doğal şekilde kapatmaya yardımcı olur."
+        aciklama: "Cilt kusurlarını kapatmaya yardımcı olan kapatıcı."
     },
 
     {
@@ -97,7 +93,7 @@ const urunler = [
         puan: 4.8,
         etiket: "YENİ",
         resim: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Cildin nemli ve canlı görünmesine yardımcı olan bakım serumu."
+        aciklama: "Cildin nemli ve canlı görünmesine yardımcı olan serum."
     },
 
     {
@@ -109,7 +105,7 @@ const urunler = [
         puan: 4.6,
         etiket: "",
         resim: "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Günlük kullanıma uygun nazik yüz temizleme ürünü."
+        aciklama: "Günlük kullanıma uygun yüz temizleme ürünü."
     },
 
     {
@@ -121,7 +117,7 @@ const urunler = [
         puan: 4.8,
         etiket: "ÇOK SATAN",
         resim: "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Cildin nemli ve yumuşak hissedilmesine yardımcı olan nemlendirici."
+        aciklama: "Nemlendirici bakım kremi."
     },
 
     {
@@ -145,7 +141,7 @@ const urunler = [
         puan: 4.8,
         etiket: "ÇOK SATAN",
         resim: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Yoğun ve karakteristik koku profiline sahip parfüm."
+        aciklama: "Yoğun karaktere sahip parfüm."
     },
 
     {
@@ -157,7 +153,7 @@ const urunler = [
         puan: 4.7,
         etiket: "YENİ",
         resim: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Dudaklara parlak ve bakımlı bir görünüm kazandıran lip oil."
+        aciklama: "Dudaklara parlak görünüm kazandıran lip oil."
     },
 
     {
@@ -169,7 +165,7 @@ const urunler = [
         puan: 4.6,
         etiket: "",
         resim: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Makyajın daha pürüzsüz görünmesine yardımcı olan transparan pudra."
+        aciklama: "Makyaj için transparan pudra."
     },
 
     {
@@ -181,116 +177,37 @@ const urunler = [
         puan: 4.7,
         etiket: "YENİ",
         resim: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=800&q=85",
-        aciklama: "Cilde ferah ve ışıltılı bir görünüm kazandırmaya yardımcı olan yüz spreyi."
+        aciklama: "Cilde ferah görünüm kazandıran yüz spreyi."
     }
 
 ];
 
 
 /* =========================================
-   GÖSTERİLEN ÜRÜNLER
-========================================= */
-
-let gosterilenUrunler = [...urunler];
-
-
-/* =========================================
-   ÜRÜNLERİ GÖSTER
+   ÜRÜNLERİ OLUŞTUR
 ========================================= */
 
 function urunleriGoster(liste) {
 
-    const container =
-        document.getElementById("urunlerContainer");
+    const container = document.getElementById("urunlerContainer");
+    const sayac = document.getElementById("urunSayisi");
 
-    const sayac =
-        document.getElementById("urunSayisi");
-
-    container.innerHTML = "";
-
-    sayac.textContent = `${liste.length} ürün`;
-
-    if (liste.length === 0) {
-
-        container.innerHTML = `
-            <div class="urun-yok">
-                <h3>Ürün bulunamadı.</h3>
-                <p>Farklı bir ürün veya kategori deneyin.</p>
-            </div>
-        `;
-
+    if (!container) {
+        console.log("urunlerContainer bulunamadı!");
         return;
     }
 
-    liste.forEach(urun => {
+    container.innerHTML = "";
+
+    if (sayac) {
+        sayac.textContent = liste.length + " ürün";
+    }
+
+    liste.forEach(function(urun) {
 
         const kart = document.createElement("article");
 
         kart.className = "urun-karti";
-
-        kart.innerHTML = `
-
-            ${
-                urun.etiket
-                ? `<div class="etiket">${urun.etiket}</div>`
-                : ""
-            }
-
-            <div class="urun-resim">
-
-                <img
-                    src="${urun.resim}"
-                    alt="${urun.ad}"
-                    loading="lazy"
-                >
-
-            </div>
-
-            <div class="urun-bilgi">
-
-                <div class="marka">
-                    ${urun.marka}
-                </div>
-
-                <div class="urun-adi">
-                    ${urun.ad}
-                </div>
-
-                <div class="yildiz">
-                    ⭐ ${urun.puan}
-                </div>
-
-                <div class="fiyat">
-                    ₺${urun.fiyat.toLocaleString("tr-TR")}
-                </div>
-
-                <button
-                    class="detay-btn"
-                    onclick="detayAc(${urun.id})"
-                >
-                    DETAYI GÖR
-                </button>
-
-            </div>
-        `;
-
-        container.appendChild(kart);
-
-    });
-}
-
-
-    liste.forEach(urun => {
-
-        const kart = document.createElement("article");
-
-        /*
-           ÖNEMLİ:
-           CSS ile aynı class kullanılıyor.
-        */
-
-        kart.className = "urun-karti";
-
 
         kart.innerHTML = `
 
@@ -298,22 +215,16 @@ function urunleriGoster(liste) {
 
                 ${
                     urun.etiket
-                    ? `
-                        <span class="urun-etiket">
-                            ${urun.etiket}
-                        </span>
-                    `
+                    ? `<span class="urun-etiket">${urun.etiket}</span>`
                     : ""
                 }
 
                 <img
                     src="${urun.resim}"
                     alt="${urun.ad}"
-                    loading="lazy"
                 >
 
             </div>
-
 
             <div class="urun-bilgi">
 
@@ -342,28 +253,27 @@ function urunleriGoster(liste) {
                 </button>
 
             </div>
-
         `;
 
         container.appendChild(kart);
 
     });
-
 }
 
 
 /* =========================================
-   KATEGORİ FİLTRE
+   KATEGORİ
 ========================================= */
 
 function kategoriFiltrele(kategori) {
 
-    gosterilenUrunler =
-        urunler.filter(
-            urun => urun.kategori === kategori
-        );
+    const sonuc = urunler.filter(function(urun) {
 
-    urunleriGoster(gosterilenUrunler);
+        return urun.kategori === kategori;
+
+    });
+
+    urunleriGoster(sonuc);
 
     document
         .getElementById("urunler")
@@ -379,9 +289,7 @@ function kategoriFiltrele(kategori) {
 
 function tumUrunleriGoster() {
 
-    gosterilenUrunler = [...urunler];
-
-    urunleriGoster(gosterilenUrunler);
+    urunleriGoster(urunler);
 
     document
         .getElementById("urunler")
@@ -401,10 +309,7 @@ function urunAra() {
         document.getElementById("aramaInput");
 
     const aranan =
-        input.value
-            .toLowerCase()
-            .trim();
-
+        input.value.toLowerCase().trim();
 
     if (aranan === "") {
 
@@ -413,30 +318,19 @@ function urunAra() {
         return;
     }
 
+    const sonuc = urunler.filter(function(urun) {
 
-    const sonuc =
-        urunler.filter(urun =>
+        return (
 
-            urun.ad
-                .toLowerCase()
-                .includes(aranan)
+            urun.ad.toLowerCase().includes(aranan) ||
 
-            ||
+            urun.marka.toLowerCase().includes(aranan) ||
 
-            urun.marka
-                .toLowerCase()
-                .includes(aranan)
-
-            ||
-
-            urun.kategori
-                .toLowerCase()
-                .includes(aranan)
+            urun.kategori.toLowerCase().includes(aranan)
 
         );
 
-
-    gosterilenUrunler = sonuc;
+    });
 
     urunleriGoster(sonuc);
 
@@ -449,18 +343,107 @@ function urunAra() {
 
 
 /* =========================================
+   DETAY
+========================================= */
+
+function detayAc(id) {
+
+    const urun =
+        urunler.find(function(u) {
+
+            return u.id === id;
+
+        });
+
+    if (!urun) {
+        return;
+    }
+
+    const modal =
+        document.getElementById("detayModal");
+
+    const icerik =
+        document.getElementById("detayIcerik");
+
+    icerik.innerHTML = `
+
+        <img
+            src="${urun.resim}"
+            style="
+                width:250px;
+                height:300px;
+                object-fit:cover;
+                display:block;
+                margin:auto;
+            "
+        >
+
+        <div style="margin-top:20px">
+
+            <p style="color:#888">
+                ${urun.marka}
+            </p>
+
+            <h2>
+                ${urun.ad}
+            </h2>
+
+            <p>
+                ⭐ ${urun.puan}
+            </p>
+
+            <h3>
+                ₺${urun.fiyat.toLocaleString("tr-TR")}
+            </h3>
+
+            <p>
+                ${urun.aciklama}
+            </p>
+
+        </div>
+    `;
+
+    modal.style.display = "flex";
+}
+
+
+/* =========================================
+   DETAY KAPAT
+========================================= */
+
+function detayKapat() {
+
+    document.getElementById("detayModal")
+        .style.display = "none";
+}
+
+
+/* =========================================
    ENTER İLE ARAMA
 ========================================= */
 
-document
-    .getElementById("aramaInput")
-    .addEventListener("keydown", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
 
-        if (event.key === "Enter") {
-            urunAra();
-        }
-    });
-window.addEventListener("load", function () {
     urunleriGoster(urunler);
-});
 
+    const aramaInput =
+        document.getElementById("aramaInput");
+
+    if (aramaInput) {
+
+        aramaInput.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (event.key === "Enter") {
+
+                    urunAra();
+
+                }
+
+            }
+        );
+
+    }
+
+});
