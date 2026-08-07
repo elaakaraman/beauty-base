@@ -208,9 +208,7 @@ function urunleriGoster(liste) {
 
     container.innerHTML = "";
 
-    sayac.textContent =
-        `${liste.length} ürün`;
-
+    sayac.textContent = `${liste.length} ürün`;
 
     if (liste.length === 0) {
 
@@ -223,6 +221,63 @@ function urunleriGoster(liste) {
 
         return;
     }
+
+    liste.forEach(urun => {
+
+        const kart = document.createElement("article");
+
+        kart.className = "urun-karti";
+
+        kart.innerHTML = `
+
+            ${
+                urun.etiket
+                ? `<div class="etiket">${urun.etiket}</div>`
+                : ""
+            }
+
+            <div class="urun-resim">
+
+                <img
+                    src="${urun.resim}"
+                    alt="${urun.ad}"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="urun-bilgi">
+
+                <div class="marka">
+                    ${urun.marka}
+                </div>
+
+                <div class="urun-adi">
+                    ${urun.ad}
+                </div>
+
+                <div class="yildiz">
+                    ⭐ ${urun.puan}
+                </div>
+
+                <div class="fiyat">
+                    ₺${urun.fiyat.toLocaleString("tr-TR")}
+                </div>
+
+                <button
+                    class="detay-btn"
+                    onclick="detayAc(${urun.id})"
+                >
+                    DETAYI GÖR
+                </button>
+
+            </div>
+        `;
+
+        container.appendChild(kart);
+
+    });
+}
 
 
     liste.forEach(urun => {
