@@ -1,1113 +1,241 @@
-/* =====================================================
-   BEAUTYBASE
-   BLACK × DEEP PINK × GOLD
-   PREMIUM BEAUTY DESIGN
-===================================================== */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
+:root {
+    --siyah: #0b0b0b;
+    --koyu-pembe: #c2185b;
+    --acik-pembe: #f8bbd0;
+    --altin: #d4af37;
+    --beyaz: #ffffff;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #210914;
-    color: #ffffff;
+    background: var(--siyah);
+    color: var(--beyaz);
 }
 
 
-/* =====================================================
-   HEADER
-===================================================== */
+/* HEADER */
 
 header {
-    min-height: 82px;
-    padding: 0 6%;
-
+    width: 100%;
+    padding: 25px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
-
-    background: #080808;
-
-    border-bottom: 1px solid #8f5a25;
-
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    border-bottom: 1px solid var(--altin);
 }
 
 
-/* LOGO */
-
 .logo {
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 5px;
-    white-space: nowrap;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .logo span {
-    color: #d9a441;
-    font-weight: 300;
+    color: var(--koyu-pembe);
 }
 
-
-/* NAV */
 
 nav {
     display: flex;
-    align-items: center;
-    gap: 32px;
+    gap: 30px;
 }
+
 
 nav a {
-    position: relative;
-
-    color: #ffffff;
+    color: white;
     text-decoration: none;
-
-    font-size: 13px;
-    letter-spacing: 1px;
-
-    transition: 0.3s;
+    transition: .3s;
 }
+
 
 nav a:hover {
-    color: #d9a441;
-}
-
-nav a::after {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-
-    width: 0;
-    height: 2px;
-
-    background: #d9a441;
-
-    transition: 0.3s;
-}
-
-nav a:hover::after {
-    width: 100%;
+    color: var(--altin);
 }
 
 
-/* =====================================================
-   ARAMA
-===================================================== */
-
-.arama {
-    display: flex;
-    height: 42px;
-}
+/* ARAMA */
 
 .arama input {
-    width: 190px;
-
-    padding: 0 14px;
-
-    border: 1px solid #5f263d;
-    border-right: none;
-
-    outline: none;
-
-    background: #16060d;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--altin);
+    background: #111;
     color: white;
-
-    font-size: 13px;
 }
 
-.arama input::placeholder {
-    color: #b88d9c;
-}
-
-.arama input:focus {
-    border-color: #d9a441;
-}
 
 .arama button {
-    width: 70px;
-
+    padding: 10px 20px;
+    border-radius: 20px;
     border: none;
-
-    background: #d9a441;
-    color: #100800;
-
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 1px;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.arama button:hover {
-    background: #f0c76b;
+    background: var(--koyu-pembe);
+    color:white;
+    cursor:pointer;
 }
 
 
-/* =====================================================
-   HERO
-===================================================== */
+/* HERO */
 
 .hero {
-    min-height: 620px;
-
-    display: grid;
-    grid-template-columns: 45% 55%;
-
-    align-items: center;
-
-    padding: 70px 7%;
-
-    gap: 45px;
-
-    background:
-        radial-gradient(
-            circle at 20% 20%,
-            #55152f 0,
-            transparent 40%
-        ),
-        linear-gradient(
-            135deg,
-            #090909,
-            #210914 55%,
-            #3c1026
-        );
+    min-height: 600px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 8%;
 }
 
 
-/* HERO YAZI */
-
-.hero-yazi {
-    max-width: 600px;
+.hero-etiket,
+.section-etiket {
+    color:var(--altin);
+    letter-spacing:3px;
 }
 
-.hero-etiket {
-    color: #d9a441;
-
-    font-size: 10px;
-
-    letter-spacing: 5px;
-
-    margin-bottom: 25px;
-}
 
 .hero h1 {
-    font-family: Georgia, "Times New Roman", serif;
-
-    color: #ffffff;
-
-    font-size: clamp(55px, 6vw, 82px);
-
-    line-height: 0.95;
-
-    font-weight: 400;
-
-    letter-spacing: -3px;
-
-    margin-bottom: 30px;
+    font-size:60px;
 }
+
 
 .hero h1 span {
-    display: block;
-
-    color: #e05a8b;
-
-    font-style: italic;
-
-    margin-top: 10px;
-}
-
-.hero-yazi p {
-    max-width: 450px;
-
-    color: #d5aebb;
-
-    font-size: 16px;
-
-    line-height: 1.8;
-
-    margin-bottom: 35px;
+    color:var(--koyu-pembe);
 }
 
 
-/* HERO BUTON */
+.hero p {
+    color:var(--acik-pembe);
+    margin:20px 0;
+}
+
 
 .kesfet {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    padding: 17px 30px;
-
-    background: #d9a441;
-
-    color: #160a00;
-
-    text-decoration: none;
-
-    font-size: 11px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
-    transition: 0.3s;
-}
-
-.kesfet:hover {
-    background: #ffffff;
-
-    transform: translateY(-3px);
+    display:inline-block;
+    padding:15px 30px;
+    background:var(--koyu-pembe);
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
 }
 
 
-/* =====================================================
-   HERO GÖRSEL
-===================================================== */
-
-.hero-gorsel {
-    width: 100%;
-    height: 500px;
-
-    position: relative;
-
-    overflow: hidden;
-
-    border: 1px solid #9b642c;
-
-    box-shadow:
-        0 20px 60px rgba(0, 0, 0, 0.5);
-}
-
-.hero-gorsel::after {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(217, 164, 65, 0.12),
-            transparent 40%,
-            rgba(94, 10, 43, 0.25)
-        );
-
-    pointer-events: none;
-}
+/* GÖRSEL */
 
 .hero-gorsel img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    transition: 0.6s;
+    width:420px;
+    border-radius:30px;
+    border:3px solid var(--altin);
 }
 
-.hero-gorsel:hover img {
-    transform: scale(1.04);
-}
-
-
-/* HERO KART */
 
 .hero-kart {
-    position: absolute;
-
-    left: 25px;
-    bottom: 25px;
-
-    z-index: 5;
-
-    padding: 18px 22px;
-
-    min-width: 220px;
-
-    background: rgba(8, 8, 8, 0.9);
-
-    border-left: 3px solid #d9a441;
-
-    backdrop-filter: blur(8px);
-}
-
-.hero-kart span {
-    display: block;
-
-    color: #d9a441;
-
-    font-size: 9px;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 7px;
-}
-
-.hero-kart strong {
-    color: white;
-
-    font-family: Georgia, serif;
-
-    font-size: 18px;
-
-    font-weight: 400;
+    background:var(--koyu-pembe);
+    padding:20px;
+    border-radius:20px;
+    margin-top:15px;
 }
 
 
-/* =====================================================
-   KATEGORİLER
-===================================================== */
+/* KATEGORİ */
 
 .kategori-section {
-    padding: 85px 7%;
-
-    text-align: center;
-
-    background: #4b102d;
-
-    border-top: 1px solid #8e5429;
-    border-bottom: 1px solid #8e5429;
-}
-
-.section-etiket {
-    color: #d9a441;
-
-    font-size: 10px;
-
-    letter-spacing: 5px;
-
-    margin-bottom: 15px;
-}
-
-.kategori-section h2 {
-    font-family: Georgia, serif;
-
-    color: white;
-
-    font-size: 43px;
-
-    font-weight: 400;
-
-    margin-bottom: 15px;
-}
-
-.kategori-aciklama {
-    color: #e2b9c8;
-
-    margin-bottom: 35px;
+    padding:80px 8%;
+    text-align:center;
 }
 
 
-/* KATEGORİ BUTONLARI */
-
-.kategoriler {
-    display: flex;
-
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 15px;
+.kategori-section h2,
+main h2,
+.newsletter h2 {
+    font-size:40px;
+    margin:20px 0;
 }
+
 
 .kategoriler button {
-    min-width: 160px;
-
-    padding: 17px 25px;
-
-    border: 1px solid #b77a31;
-
-    background: #17070e;
-
-    color: white;
-
-    cursor: pointer;
-
-    font-size: 12px;
-
-    letter-spacing: 1px;
-
-    transition: 0.3s;
+    background:#151515;
+    color:white;
+    border:1px solid var(--altin);
+    padding:20px 40px;
+    margin:10px;
+    border-radius:20px;
+    cursor:pointer;
 }
+
 
 .kategoriler button:hover {
-    background: #d9a441;
-
-    color: #17070e;
-
-    transform: translateY(-3px);
-}
-
-.kategori-icon {
-    color: #d9a441;
-
-    margin-right: 8px;
+    background:var(--koyu-pembe);
 }
 
 
-/* =====================================================
-   ÜRÜNLER
-===================================================== */
+/* ÜRÜNLER */
 
-#urunler {
-    padding: 85px 7%;
-
-    background:
-        radial-gradient(
-            circle at 90% 10%,
-            #401027,
-            transparent 30%
-        ),
-        #12060b;
+main {
+    padding:80px 8%;
 }
 
-
-/* ÜRÜN BAŞLIK */
-
-.baslik {
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: end;
-
-    margin-bottom: 40px;
-
-    border-bottom: 1px solid #5f263d;
-
-    padding-bottom: 25px;
-}
-
-.baslik h2 {
-    font-family: Georgia, serif;
-
-    color: white;
-
-    font-size: 43px;
-
-    font-weight: 400;
-}
-
-.urun-aciklama {
-    color: #c89aaa;
-
-    margin-top: 10px;
-}
-
-#urunSayisi {
-    color: #d9a441;
-
-    font-size: 13px;
-
-    letter-spacing: 1px;
-}
-
-
-/* =====================================================
-   ÜRÜN GRID
-===================================================== */
 
 .urunler-container {
-    width: 100%;
-
-    display: grid;
-
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-
-    gap: 22px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
 }
 
 
-/* =====================================================
-   ÜRÜN KARTI
-===================================================== */
-
-.urun-karti {
-    position: relative;
-
-    overflow: hidden;
-
-    min-width: 0;
-
-    background: #2c0b1b;
-
-    border: 1px solid #61233f;
-
-    transition:
-        transform 0.3s,
-        border-color 0.3s,
-        box-shadow 0.3s;
-}
-
-.urun-karti:hover {
-    transform: translateY(-7px);
-
-    border-color: #d9a441;
-
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.5);
-}
-
-
-/* =====================================================
-   ÜRÜN GÖRSELİ
-===================================================== */
-
-.urun-gorsel-alani {
-    position: relative;
-
-    width: 100%;
-
-    height: 320px;
-
-    overflow: hidden;
-
-    background: #55152f;
-}
-
-.urun-gorsel-alani img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    transition: 0.5s;
-}
-
-.urun-karti:hover .urun-gorsel-alani img {
-    transform: scale(1.06);
-}
-
-
-/* =====================================================
-   ÜRÜN ETİKETİ
-===================================================== */
-
-.urun-etiket {
-    position: absolute;
-
-    top: 14px;
-    left: 14px;
-
-    z-index: 5;
-
-    padding: 7px 10px;
-
-    background: #d9a441;
-
-    color: #160a00;
-
-    font-size: 8px;
-
-    font-weight: bold;
-
-    letter-spacing: 1px;
-}
-
-
-/* =====================================================
-   ÜRÜN BİLGİ
-===================================================== */
-
-.urun-bilgi {
-    padding: 22px;
-}
-
-.urun-marka {
-    color: #d9a441;
-
-    font-size: 10px;
-
-    letter-spacing: 2px;
-
-    margin-bottom: 8px;
-}
-
-.urun-bilgi h3 {
-    color: white;
-
-    font-family: Georgia, serif;
-
-    font-size: 19px;
-
-    font-weight: 400;
-
-    line-height: 1.3;
-
-    margin-bottom: 12px;
-}
-
-
-/* YILDIZ */
-
-.urun-puan {
-    display: flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    margin-bottom: 14px;
-}
-
-.urun-puan span {
-    color: #d9a441;
-
-    letter-spacing: 2px;
-
-    font-size: 13px;
-}
-
-.urun-puan b {
-    color: #dcb8c5;
-
-    font-size: 12px;
-
-    font-weight: 400;
-}
-
-
-/* FİYAT */
-
-.fiyat {
-    color: white;
-
-    font-size: 19px;
-
-    font-weight: 600;
-
-    margin-bottom: 18px;
-}
-
-
-/* =====================================================
-   DETAY BUTONU
-===================================================== */
-
-.detay-btn {
-    width: 100%;
-
-    height: 44px;
-
-    border: 1px solid #d9a441;
-
-    background: transparent;
-
-    color: #d9a441;
-
-    cursor: pointer;
-
-    font-size: 10px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
-    transition: 0.3s;
-}
-
-.detay-btn:hover {
-    background: #d9a441;
-
-    color: #17070e;
-}
-
-
-/* =====================================================
-   ÜRÜN YOK
-===================================================== */
-
-.urun-yok {
-    grid-column: 1 / -1;
-
-    text-align: center;
-
-    padding: 80px 20px;
-
-    color: #e2b9c8;
-}
-
-.urun-yok h3 {
-    color: white;
-
-    margin-bottom: 10px;
-}
-
-
-/* =====================================================
-   MODAL
-===================================================== */
-
-.modal {
-    display: none;
-
-    position: fixed;
-
-    inset: 0;
-
-    background: rgba(0, 0, 0, 0.78);
-
-    justify-content: center;
-
-    align-items: center;
-
-    padding: 20px;
-
-    z-index: 2000;
-}
-
-.modal-content {
-    position: relative;
-
-    width: 90%;
-
-    max-width: 750px;
-
-    max-height: 90vh;
-
-    overflow-y: auto;
-
-    padding: 40px;
-
-    background: #2b0b1a;
-
-    border: 1px solid #d9a441;
-
-    box-shadow:
-        0 20px 80px rgba(0, 0, 0, 0.7);
-}
-
-.kapat {
-    position: absolute;
-
-    right: 20px;
-    top: 15px;
-
-    border: none;
-
-    background: transparent;
-
-    color: #d9a441;
-
-    font-size: 30px;
-
-    cursor: pointer;
-}
-
-
-/* =====================================================
-   NEWSLETTER
-===================================================== */
+/* NEWSLETTER */
 
 .newsletter {
-    padding: 85px 7%;
-
-    text-align: center;
-
-    background: #5a1235;
-
-    border-top: 1px solid #a86d2e;
-}
-
-.newsletter h2 {
-    max-width: 700px;
-
-    margin: 0 auto 15px;
-
-    font-family: Georgia, serif;
-
-    color: white;
-
-    font-size: 42px;
-
-    font-weight: 400;
-}
-
-.newsletter p {
-    color: #e6bdcd;
-
-    margin-bottom: 28px;
-}
-
-.newsletter-form {
-    display: flex;
-
-    max-width: 500px;
-
-    margin: auto;
-}
-
-.newsletter-form input {
-    flex: 1;
-
-    height: 50px;
-
-    padding: 0 15px;
-
-    border: 1px solid #7d3b56;
-
-    outline: none;
-
-    background: #250916;
-
-    color: white;
-}
-
-.newsletter-form button {
-    width: 110px;
-
-    border: none;
-
-    background: #d9a441;
-
-    color: #160a00;
-
-    font-weight: bold;
-
-    cursor: pointer;
+    padding:80px 8%;
+    background:linear-gradient(
+        135deg,
+        var(--koyu-pembe),
+        #5a0b2a
+    );
+    text-align:center;
 }
 
 
-/* =====================================================
-   FOOTER
-===================================================== */
+.newsletter input {
+    padding:15px;
+    border-radius:20px;
+    border:none;
+}
+
+
+.newsletter button {
+    padding:15px 30px;
+    background:var(--altin);
+    border:none;
+    border-radius:20px;
+}
+
+
+/* FOOTER */
 
 footer {
-    padding: 60px 7% 20px;
-
-    background: #070707;
-
-    color: white;
-
-    border-top: 1px solid #8e5429;
+    padding:50px 8%;
+    background:#050505;
+    border-top:1px solid var(--altin);
 }
 
-.footer-ust {
-    display: flex;
-
-    justify-content: space-between;
-
-    gap: 50px;
-
-    margin-bottom: 50px;
-}
-
-.footer-logo {
-    color: white;
-
-    margin-bottom: 15px;
-}
-
-.footer-menu {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 12px;
-}
-
-.footer-menu h3 {
-    color: #d9a441;
-
-    margin-bottom: 8px;
-}
 
 .footer-menu a {
-    color: #c69aa9;
-
-    text-decoration: none;
-
-    font-size: 13px;
+    color:var(--acik-pembe);
+    display:block;
+    margin:10px;
 }
 
-.footer-menu a:hover {
-    color: white;
-}
 
 .footer-alt {
-    display: flex;
-
-    justify-content: space-between;
-
-    padding-top: 20px;
-
-    border-top: 1px solid #292929;
-
-    color: #927080;
-
-    font-size: 12px;
+    margin-top:30px;
+    display:flex;
+    justify-content:space-between;
+    color:var(--altin);
 }
-
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 1000px) {
-
-    .urunler-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .hero {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .hero h1 {
-        font-size: 55px;
-    }
-
-}
-
-
-/* =====================================================
-   TELEFON
-===================================================== */
-
-@media (max-width: 700px) {
-
-    header {
-        min-height: auto;
-
-        padding: 15px 20px;
-
-        flex-wrap: wrap;
-
-        gap: 15px;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    nav {
-        order: 3;
-
-        width: 100%;
-
-        justify-content: center;
-
-        gap: 20px;
-    }
-
-    .arama {
-        width: 100%;
-    }
-
-    .arama input {
-        width: auto;
-
-        flex: 1;
-    }
-
-
-    /* HERO */
-
-    .hero {
-        display: flex;
-
-        flex-direction: column;
-
-        padding: 50px 20px;
-
-        gap: 35px;
-    }
-
-    .hero h1 {
-        font-size: 45px;
-    }
-
-    .hero-gorsel {
-        height: 360px;
-    }
-
-
-    /* KATEGORİ */
-
-    .kategori-section {
-        padding: 60px 20px;
-    }
-
-    .kategori-section h2 {
-        font-size: 32px;
-    }
-
-
-    /* ÜRÜNLER */
-
-    #urunler {
-        padding: 60px 20px;
-    }
-
-    .baslik {
-        display: block;
-    }
-
-    #urunSayisi {
-        display: block;
-
-        margin-top: 15px;
-    }
-
-    .urunler-container {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* NEWSLETTER */
-
-    .newsletter {
-        padding: 60px 20px;
-    }
-
-    .newsletter h2 {
-        font-size: 32px;
-    }
-
-    .newsletter-form {
-        flex-direction: column;
-
-        gap: 10px;
-    }
-
-    .newsletter-form button {
-        width: 100%;
-
-        height: 48px;
-    }
-
-
-    /* FOOTER */
-
-    .footer-ust {
-        flex-direction: column;
-    }
-
-    .footer-alt {
-        flex-direction: column;
-
-        gap: 10px;
-    }
-
-   }
