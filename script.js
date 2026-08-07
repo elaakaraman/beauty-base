@@ -401,4 +401,7 @@ document
     .getElementById("aramaInput")
     .addEventListener("keydown", function(event) {
 
-        if (event
+        if (event.key === "Enter") {
+            urunAra();
+        }
+    });
