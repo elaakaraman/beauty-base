@@ -463,3 +463,4 @@ document
 window.addEventListener("load", function () {
     urunleriGoster(urunler);
 });
+
