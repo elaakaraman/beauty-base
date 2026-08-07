@@ -405,3 +405,6 @@ document
             urunAra();
         }
     });
+window.addEventListener("load", function () {
+    urunleriGoster(urunler);
+});
