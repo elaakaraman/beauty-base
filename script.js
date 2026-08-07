@@ -1,28 +1,75 @@
 const urunler = [
+
     {
         ad: "Luxury Ruj",
         kategori: "Makyaj",
         fiyat: "499 TL",
         resim: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=500"
     },
+
     {
         ad: "Glow Fondöten",
         kategori: "Makyaj",
         fiyat: "799 TL",
         resim: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500"
     },
+
+    {
+        ad: "Kirpik Uzatan Maskara",
+        kategori: "Makyaj",
+        fiyat: "399 TL",
+        resim: "https://images.unsplash.com/photo-1631214524020-7e18db1b3b72?w=500"
+    },
+
+    {
+        ad: "Rose Far Paleti",
+        kategori: "Makyaj",
+        fiyat: "699 TL",
+        resim: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=500"
+    },
+
     {
         ad: "Cilt Bakım Serumu",
         kategori: "Cilt Bakımı",
         fiyat: "650 TL",
-        resim: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500"
+        resim: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500"
     },
+
+    {
+        ad: "Nemlendirici Krem",
+        kategori: "Cilt Bakımı",
+        fiyat: "450 TL",
+        resim: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500"
+    },
+
+    {
+        ad: "Vitamin C Serum",
+        kategori: "Cilt Bakımı",
+        fiyat: "750 TL",
+        resim: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500"
+    },
+
     {
         ad: "Premium Parfüm",
         kategori: "Parfüm",
         fiyat: "1200 TL",
         resim: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=500"
+    },
+
+    {
+        ad: "Rose Luxury Parfüm",
+        kategori: "Parfüm",
+        fiyat: "1500 TL",
+        resim: "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=500"
+    },
+
+    {
+        ad: "Golden Beauty Set",
+        kategori: "Makyaj",
+        fiyat: "1800 TL",
+        resim: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500"
     }
+
 ];
 
 
