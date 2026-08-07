@@ -1,5 +1,5 @@
 /* =========================================
-   GENEL
+   BEAUTYBASE - TEMİZ CSS
 ========================================= */
 
 * {
@@ -25,12 +25,11 @@ body {
 
 header {
     height: 86px;
-    background: white;
+    background: #ffffff;
     border-bottom: 1px solid #e5e5e5;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     padding: 0 6%;
 
@@ -43,6 +42,7 @@ header {
     font-size: 25px;
     letter-spacing: 5px;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .logo span {
@@ -52,6 +52,8 @@ header {
 nav {
     display: flex;
     gap: 35px;
+    margin-left: auto;
+    margin-right: 45px;
 }
 
 nav a {
@@ -90,10 +92,6 @@ nav a:hover {
     cursor: pointer;
 }
 
-.arama button:hover {
-    background: #a97f78;
-}
-
 
 /* =========================================
    HERO
@@ -103,7 +101,6 @@ nav a:hover {
     min-height: 620px;
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
 
     align-items: center;
@@ -128,31 +125,22 @@ nav a:hover {
 
 .hero h1 {
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 70px;
-
     line-height: 0.98;
-
     font-weight: 400;
-
     margin-bottom: 30px;
 }
 
 .hero h1 span {
     display: block;
-
     color: #a97f78;
-
     font-style: italic;
 }
 
 .hero-yazi p {
     color: #666;
-
     font-size: 16px;
-
     line-height: 1.7;
-
     margin-bottom: 30px;
 }
 
@@ -160,7 +148,6 @@ nav a:hover {
     display: inline-block;
 
     background: #111;
-
     color: white;
 
     padding: 17px 30px;
@@ -168,12 +155,7 @@ nav a:hover {
     text-decoration: none;
 
     font-size: 11px;
-
     letter-spacing: 2px;
-}
-
-.kesfet:hover {
-    background: #a97f78;
 }
 
 
@@ -184,18 +166,13 @@ nav a:hover {
 .hero-gorsel {
     width: 100%;
     height: 500px;
-
     overflow: hidden;
-
-    position: relative;
 }
 
 .hero-gorsel img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     display: block;
 }
 
@@ -206,9 +183,7 @@ nav a:hover {
 
 .kategori-section {
     padding: 80px 7%;
-
     text-align: center;
-
     background: white;
 }
 
@@ -216,90 +191,71 @@ nav a:hover {
     font-size: 10px;
     letter-spacing: 4px;
     color: #888;
-
     margin-bottom: 15px;
 }
 
 .kategori-section h2 {
     font-family: Georgia, serif;
-
     font-size: 42px;
-
     font-weight: 400;
-
     margin-bottom: 15px;
 }
 
 .kategori-aciklama {
     color: #777;
-
     margin-bottom: 35px;
 }
 
 .kategoriler {
     display: flex;
-
     justify-content: center;
-
     gap: 15px;
-
     flex-wrap: wrap;
 }
 
 .kategoriler button {
     background: white;
-
     border: 1px solid #ddd;
-
     padding: 18px 30px;
-
     cursor: pointer;
-
     font-size: 13px;
 }
 
 .kategoriler button:hover {
     background: #111;
-
     color: white;
 }
 
 
 /* =========================================
-   ÜRÜNLER
+   ÜRÜNLER ANA ALAN
 ========================================= */
 
 #urunler {
     padding: 80px 7%;
+    background: #faf9f7;
 }
 
 .baslik {
     display: flex;
-
     justify-content: space-between;
-
     align-items: end;
-
     margin-bottom: 40px;
 }
 
 .baslik h2 {
     font-family: Georgia, serif;
-
     font-size: 42px;
-
     font-weight: 400;
 }
 
 .urun-aciklama {
     margin-top: 10px;
-
     color: #777;
 }
 
 #urunSayisi {
     color: #777;
-
     font-size: 14px;
 }
 
@@ -309,14 +265,15 @@ nav a:hover {
 ========================================= */
 
 .urunler-container {
+    width: 100%;
 
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 
     gap: 25px;
 
-    width: 100%;
+    align-items: start;
 }
 
 
@@ -325,134 +282,123 @@ nav a:hover {
 ========================================= */
 
 .urun-karti {
+    width: 100%;
+    min-width: 0;
 
-    background: white;
+    background: #ffffff;
 
     border: 1px solid #e7e3df;
-
-    width: 100%;
-
-    min-width: 0;
 
     overflow: hidden;
 
     position: relative;
+
+    display: block;
 }
 
 
 /* =========================================
-   ÜRÜN GÖRSELİ
+   ÜRÜN GÖRSEL ALANI
 ========================================= */
 
 .urun-gorsel-alani {
+    width: 100% !important;
 
-    width: 100%;
+    height: 330px !important;
 
-    height: 330px;
-
-    position: relative;
+    min-height: 330px !important;
+    max-height: 330px !important;
 
     overflow: hidden;
+
+    position: relative;
 
     background: #f1eee9;
 }
 
 .urun-gorsel-alani img {
+    width: 100% !important;
 
-    width: 100%;
+    height: 330px !important;
 
-    height: 100%;
+    min-height: 330px !important;
+    max-height: 330px !important;
 
-    display: block;
+    object-fit: cover !important;
 
-    object-fit: cover;
+    display: block !important;
 
-    transition: 0.3s;
+    margin: 0 !important;
+
+    padding: 0 !important;
 }
 
-.urun-karti:hover img {
-    transform: scale(1.04);
+.urun-karti:hover .urun-gorsel-alani img {
+    transform: scale(1.03);
 }
 
 
 /* =========================================
-   ETİKET
+   ÜRÜN ETİKETİ
 ========================================= */
 
 .urun-etiket {
-
     position: absolute;
 
     top: 15px;
-
     left: 15px;
 
-    z-index: 5;
+    z-index: 10;
 
     background: #111;
-
     color: white;
 
     padding: 8px 12px;
 
     font-size: 9px;
-
     letter-spacing: 1px;
 }
 
 
 /* =========================================
-   ÜRÜN BİLGİSİ
+   ÜRÜN BİLGİLERİ
 ========================================= */
 
 .urun-bilgi {
-
     padding: 22px;
+    background: white;
 }
 
 .urun-marka {
-
     color: #888;
-
     font-size: 13px;
-
     margin-bottom: 7px;
 }
 
 .urun-bilgi h3 {
-
     font-size: 18px;
-
     font-weight: 500;
-
     margin-bottom: 12px;
+    line-height: 1.3;
 }
 
 .urun-puan {
-
     font-size: 14px;
-
     margin-bottom: 12px;
 }
 
 .urun-puan span {
-
     letter-spacing: 2px;
 }
 
 .urun-puan b {
-
     font-weight: 400;
-
     margin-left: 5px;
 }
 
 .fiyat {
-
     font-size: 18px;
-
     font-weight: 600;
-
     margin-bottom: 20px;
 }
 
@@ -462,9 +408,7 @@ nav a:hover {
 ========================================= */
 
 .detay-btn {
-
     width: 100%;
-
     height: 45px;
 
     background: white;
@@ -479,9 +423,7 @@ nav a:hover {
 }
 
 .detay-btn:hover {
-
     background: #111;
-
     color: white;
 }
 
@@ -491,7 +433,6 @@ nav a:hover {
 ========================================= */
 
 .urun-yok {
-
     grid-column: 1 / -1;
 
     text-align: center;
@@ -513,7 +454,6 @@ nav a:hover {
 ========================================= */
 
 .modal {
-
     display: none;
 
     position: fixed;
@@ -524,21 +464,18 @@ nav a:hover {
     width: 100%;
     height: 100%;
 
-    background: rgba(0,0,0,0.55);
+    background: rgba(0, 0, 0, 0.55);
 
     justify-content: center;
-
     align-items: center;
 
     z-index: 2000;
 }
 
 .modal-content {
-
     background: white;
 
     width: 90%;
-
     max-width: 700px;
 
     padding: 40px;
@@ -547,14 +484,12 @@ nav a:hover {
 }
 
 .kapat {
-
     position: absolute;
 
     right: 20px;
     top: 15px;
 
     border: none;
-
     background: none;
 
     font-size: 30px;
@@ -568,7 +503,6 @@ nav a:hover {
 ========================================= */
 
 .newsletter {
-
     padding: 80px 7%;
 
     background: #f3eee9;
@@ -577,7 +511,6 @@ nav a:hover {
 }
 
 .newsletter h2 {
-
     font-family: Georgia, serif;
 
     font-size: 40px;
@@ -588,14 +521,11 @@ nav a:hover {
 }
 
 .newsletter p {
-
     color: #777;
-
     margin-bottom: 25px;
 }
 
 .newsletter-form {
-
     display: flex;
 
     justify-content: center;
@@ -606,7 +536,6 @@ nav a:hover {
 }
 
 .newsletter-form input {
-
     flex: 1;
 
     height: 50px;
@@ -617,7 +546,6 @@ nav a:hover {
 }
 
 .newsletter-form button {
-
     width: 100px;
 
     border: none;
@@ -633,7 +561,6 @@ nav a:hover {
 ========================================= */
 
 footer {
-
     background: #111;
 
     color: white;
@@ -642,7 +569,6 @@ footer {
 }
 
 .footer-ust {
-
     display: flex;
 
     justify-content: space-between;
@@ -653,14 +579,11 @@ footer {
 }
 
 .footer-logo {
-
     color: white;
-
     margin-bottom: 15px;
 }
 
 .footer-menu {
-
     display: flex;
 
     flex-direction: column;
@@ -669,12 +592,10 @@ footer {
 }
 
 .footer-menu h3 {
-
     margin-bottom: 8px;
 }
 
 .footer-menu a {
-
     color: #aaa;
 
     text-decoration: none;
@@ -683,12 +604,10 @@ footer {
 }
 
 .footer-menu a:hover {
-
     color: white;
 }
 
 .footer-alt {
-
     border-top: 1px solid #333;
 
     padding-top: 20px;
@@ -710,17 +629,12 @@ footer {
 @media (max-width: 1000px) {
 
     .urunler-container {
-
-        grid-template-columns: repeat(3, 1fr);
-
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .hero h1 {
-
         font-size: 55px;
-
     }
-
 }
 
 
@@ -731,7 +645,6 @@ footer {
 @media (max-width: 700px) {
 
     header {
-
         height: auto;
 
         min-height: 75px;
@@ -741,17 +654,13 @@ footer {
         flex-wrap: wrap;
 
         gap: 15px;
-
     }
 
     .logo {
-
         font-size: 20px;
-
     }
 
     nav {
-
         order: 3;
 
         width: 100%;
@@ -760,27 +669,22 @@ footer {
 
         gap: 25px;
 
+        margin: 0;
     }
 
     .arama {
-
         width: 100%;
-
     }
 
     .arama input {
-
         flex: 1;
-
         width: auto;
-
     }
 
 
     /* HERO */
 
     .hero {
-
         display: flex;
 
         flex-direction: column;
@@ -788,88 +692,72 @@ footer {
         padding: 45px 20px;
 
         gap: 30px;
-
     }
 
     .hero h1 {
-
         font-size: 46px;
-
     }
 
     .hero-gorsel {
-
         height: 350px;
-
     }
 
 
     /* ÜRÜNLER */
 
     #urunler {
-
         padding: 55px 20px;
-
     }
 
     .baslik {
-
         display: block;
-
     }
 
     #urunSayisi {
-
         display: block;
 
         margin-top: 15px;
-
     }
 
     .urunler-container {
-
         grid-template-columns: 1fr;
 
         gap: 25px;
-
     }
 
     .urun-gorsel-alani {
+        height: 330px !important;
+        min-height: 330px !important;
+        max-height: 330px !important;
+    }
 
-        height: 330px;
-
+    .urun-gorsel-alani img {
+        height: 330px !important;
+        min-height: 330px !important;
+        max-height: 330px !important;
     }
 
 
     /* KATEGORİ */
 
     .kategori-section {
-
         padding: 55px 20px;
-
     }
 
     .kategori-section h2 {
-
         font-size: 32px;
-
     }
 
 
     /* FOOTER */
 
     .footer-ust {
-
         flex-direction: column;
-
     }
 
     .footer-alt {
-
         flex-direction: column;
 
         gap: 10px;
-
     }
-
 }
