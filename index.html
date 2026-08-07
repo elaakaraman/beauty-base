@@ -2,35 +2,25 @@
 <html lang="tr">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>BeautyBase | Premium Beauty</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
-
-    <!-- =========================
-         ÜST MENÜ
-    ========================== -->
+    <!-- =====================================
+         HEADER
+    ====================================== -->
 
     <header>
 
-        <!-- LOGO -->
-
-        <div class="logo">
+        <a href="#" class="logo">
             BEAUTY<span>BASE</span>
-        </div>
-
-
-        <!-- MENÜ -->
+        </a>
 
         <nav>
 
@@ -47,9 +37,6 @@
             </a>
 
         </nav>
-
-
-        <!-- ARAMA -->
 
         <div class="arama">
 
@@ -68,13 +55,11 @@
     </header>
 
 
-
-    <!-- =========================
-         HERO / ANA TANITIM
-    ========================== -->
+    <!-- =====================================
+         HERO
+    ====================================== -->
 
     <section class="hero">
-
 
         <!-- SOL TARAF -->
 
@@ -84,50 +69,34 @@
                 BEAUTYBASE EXCLUSIVE
             </div>
 
-
             <h1>
-
                 Güzelliğin
-
-                <span>
-                    yeni yorumu.
-                </span>
-
+                <span>yeni yorumu.</span>
             </h1>
 
-
             <p>
-
-                Makyaj ve güzellik dünyasının
-                seçkin ürünlerini keşfet.
-
+                Makyaj, cilt bakımı ve güzellik
+                dünyasının seçkin ürünlerini keşfet.
             </p>
-
 
             <a
                 href="#urunler"
                 class="kesfet"
             >
-
                 KOLEKSİYONU KEŞFET
-
             </a>
 
         </div>
 
 
-
-        <!-- SAĞ TARAF / GÖRSEL -->
+        <!-- SAĞ TARAF -->
 
         <div class="hero-gorsel">
 
             <img
-                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=90"
+                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1200&q=90"
                 alt="BeautyBase makyaj koleksiyonu"
             >
-
-
-            <!-- GÖRSEL ÜZERİNDEKİ KART -->
 
             <div class="hero-kart">
 
@@ -146,10 +115,9 @@
     </section>
 
 
-
-    <!-- =========================
+    <!-- =====================================
          KATEGORİLER
-    ========================== -->
+    ====================================== -->
 
     <section
         id="kategoriler"
@@ -157,25 +125,20 @@
     >
 
         <div class="section-etiket">
-            BEAUTYBASE
+            BEAUTYBASE COLLECTION
         </div>
-
 
         <h2>
             Kategorileri Keşfet
         </h2>
 
-
         <p class="kategori-aciklama">
-
             Güzellik rutinin için ihtiyacın olan
             ürünleri keşfet.
-
         </p>
 
 
         <div class="kategoriler">
-
 
             <button
                 onclick="kategoriFiltrele('Makyaj')"
@@ -228,24 +191,18 @@
 
             </button>
 
-
         </div>
 
     </section>
 
 
-
-    <!-- =========================
+    <!-- =====================================
          ÜRÜNLER
-    ========================== -->
+    ====================================== -->
 
     <main id="urunler">
 
-
-        <!-- ÜRÜN BAŞLIĞI -->
-
         <div class="baslik">
-
 
             <div>
 
@@ -253,16 +210,13 @@
                     BEAUTYBASE COLLECTION
                 </div>
 
-
                 <h2>
                     Öne Çıkan Ürünler
                 </h2>
 
-
                 <p class="urun-aciklama">
-
-                    En sevilen güzellik ürünlerini keşfet.
-
+                    Güzellik dünyasının seçkin
+                    ürünlerini keşfet.
                 </p>
 
             </div>
@@ -272,90 +226,69 @@
                 0 ürün
             </span>
 
-
         </div>
 
 
-
-        <!-- ÜRÜNLER BURAYA GELECEK -->
+        <!--
+            ÜRÜNLER JAVASCRIPT TARAFINDAN
+            BURAYA EKLENECEK
+        -->
 
         <div
             id="urunlerContainer"
             class="urunler-container"
         >
-
         </div>
-
 
     </main>
 
 
-
-    <!-- =========================
-         ÜRÜN DETAY PENCERESİ
-    ========================== -->
+    <!-- =====================================
+         ÜRÜN DETAY MODALI
+    ====================================== -->
 
     <div
         id="detayModal"
         class="modal"
     >
 
-
         <div class="modal-content">
-
-
-            <!-- KAPAT -->
 
             <button
                 class="kapat"
                 onclick="detayKapat()"
             >
-
                 ×
-
             </button>
 
-
-            <!-- DETAYLAR JS İLE GELECEK -->
-
             <div id="detayIcerik">
-
             </div>
-
 
         </div>
 
     </div>
 
 
-
-    <!-- =========================
+    <!-- =====================================
          NEWSLETTER
-    ========================== -->
+    ====================================== -->
 
     <section class="newsletter">
 
-
         <div class="newsletter-icerik">
-
 
             <div class="section-etiket">
                 BEAUTYBASE
             </div>
-
 
             <h2>
                 Güzellik dünyasından
                 haberdar ol.
             </h2>
 
-
             <p>
-
-                Yeni koleksiyonlar,
-                özel ürünler ve BeautyBase
-                haberlerini keşfet.
-
+                Yeni koleksiyonlar, özel ürünler
+                ve BeautyBase haberlerini keşfet.
             </p>
 
 
@@ -372,45 +305,32 @@
 
             </div>
 
-
         </div>
 
     </section>
 
 
-
-    <!-- =========================
+    <!-- =====================================
          FOOTER
-    ========================== -->
+    ====================================== -->
 
     <footer>
-
 
         <div class="footer-ust">
 
 
-            <!-- LOGO -->
-
             <div>
 
                 <div class="logo footer-logo">
-
                     BEAUTY<span>BASE</span>
-
                 </div>
 
-
                 <p>
-
                     Beauty, elevated.
-
                 </p>
 
             </div>
 
-
-
-            <!-- FOOTER MENÜ -->
 
             <div class="footer-menu">
 
@@ -426,15 +346,12 @@
                     Kategoriler
                 </a>
 
-                <a href="#">
+                <a href="#urunler">
                     Yeni Gelenler
                 </a>
 
             </div>
 
-
-
-            <!-- DESTEK -->
 
             <div class="footer-menu">
 
@@ -456,9 +373,7 @@
 
             </div>
 
-
         </div>
-
 
 
         <div class="footer-alt">
@@ -473,17 +388,14 @@
 
         </div>
 
-
     </footer>
 
 
-
-    <!-- =========================
+    <!-- =====================================
          JAVASCRIPT
-    ========================== -->
+    ====================================== -->
 
     <script src="script.js"></script>
-
 
 </body>
 
