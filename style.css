@@ -273,3 +273,79 @@ nav a:hover::after {
     overflow: hidden;
 
     background: #e
+   /* =========================================
+   TELEFON / TABLET HERO DÜZELTME
+========================================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 45px 20px 55px;
+
+        gap: 35px;
+
+        min-height: auto;
+    }
+
+    .hero-yazi {
+        padding: 0;
+    }
+
+    .hero-etiket {
+        font-size: 9px;
+        letter-spacing: 3px;
+        margin-bottom: 18px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+
+        line-height: 1.02;
+
+        letter-spacing: -2px;
+
+        margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+        margin-top: 5px;
+    }
+
+    .hero-yazi p {
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        margin-bottom: 25px;
+    }
+
+    .kesfet {
+        padding: 15px 24px;
+    }
+
+    .hero-gorsel {
+        width: 100%;
+
+        height: 360px;
+
+        order: 2;
+    }
+
+    .hero-kart {
+        left: 15px;
+        bottom: 15px;
+
+        min-width: 170px;
+
+        padding: 14px 16px;
+    }
+
+    .hero-kart strong {
+        font-size: 16px;
+    }
+}
