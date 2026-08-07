@@ -1,125 +1,139 @@
-<!DOCTYPE html>
-<html lang="tr">
-
-<head>
-
+<!DOCTYPE html><html lang="tr"><head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BeautyBase | Premium Beauty</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 
-    <title>BeautyBase | Güzelliğini Keşfet</title>
+</head><body><!-- ÜST MENÜ -->
+<header>
 
-    <link rel="stylesheet" href="style.css">
+    <div class="logo">
+        BEAUTY<span>BASE</span>
+    </div>
 
-</head>
+    <nav>
+        <a href="#">Ana Sayfa</a>
+        <a href="#urunler">Ürünler</a>
+        <a href="#kategoriler">Kategoriler</a>
+    </nav>
 
-<body>
-
-    <!-- HEADER -->
-
-    <header>
-
-        <div class="logo">
-
-            🌸 BeautyBase
-
-        </div>
-
-        <nav>
-
-            <a href="#">Ana Sayfa</a>
-
-            <a href="#">Ürünler</a>
-
-            <a href="#">Favoriler</a>
-
-            <a href="#">Hakkımızda</a>
-
-            <a href="#">İletişim</a>
-
-        </nav>
-
-    </header>
-
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="hero-yazi">
-
-            <h1>
-
-                Güzelliğini Keşfet 💖
-
-            </h1>
-
-            <p>
-
-                Dünyanın en sevilen makyaj ürünlerini keşfet.
-
-            </p>
-
-            <button>
-
-                💄 Ürünleri Keşfet
-
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <!-- ARAMA -->
-
-    <section class="arama">
-
+    <div class="arama">
         <input
-
             type="text"
+            id="aramaInput"
+            placeholder="Ürün ara..."
+        >
 
-            id="arama"
+        <button onclick="urunAra()">Ara</button>
+    </div>
 
-            placeholder="🔍 Ürün veya marka ara...">
-
-    </section>
-
-
-    <!-- KATEGORİLER -->
-
-    <section class="kategoriler">
-
-        <button>Dudak 💋</button>
-
-        <button>Göz 👁️</button>
-
-        <button>Yüz 😊</button>
-
-        <button>Tırnak 💅</button>
-
-        <button>Cilt 🧴</button>
-
-    </section>
+</header>
 
 
-    <!-- ÜRÜNLER -->
+<!-- ANA BAŞLIK -->
+<section class="hero">
 
-    <section id="urunler">
+    <p>BEAUTYBASE COLLECTION</p>
 
-    </section>
+    <h1>
+        Güzelliğin<br>
+        <span>yeni yorumu.</span>
+    </h1>
+
+    <p class="hero-aciklama">
+        Makyaj, cilt bakımı ve güzellik dünyasının
+        seçkin ürünlerini keşfet.
+    </p>
+
+    <a href="#urunler" class="kesfet">
+        ÜRÜNLERİ KEŞFET
+    </a>
+
+</section>
 
 
-    <!-- FOOTER -->
+<!-- KATEGORİLER -->
+<section id="kategoriler" class="kategori-section">
 
-    <footer>
+    <h2>Kategoriler</h2>
 
-        © 2026 BeautyBase | Tüm Hakları Saklıdır 🌸
+    <div class="kategoriler">
 
-    </footer>
+        <button onclick="kategoriFiltrele('Makyaj')">
+            Makyaj
+        </button>
 
-    <script src="script.js"></script>
+        <button onclick="kategoriFiltrele('Cilt Bakımı')">
+            Cilt Bakımı
+        </button>
 
-</body>
+        <button onclick="kategoriFiltrele('Parfüm')">
+            Parfüm
+        </button>
 
-</html>
+        <button onclick="tumUrunleriGoster()">
+            Tüm Ürünler
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ÜRÜNLER -->
+<main id="urunler">
+
+    <div class="baslik">
+
+        <div>
+            <p>BEAUTYBASE</p>
+            <h2>Öne Çıkan Ürünler</h2>
+        </div>
+
+        <span id="urunSayisi"></span>
+
+    </div>
+
+
+    <div id="urunlerContainer" class="urunler-container">
+    </div>
+
+</main>
+
+
+<!-- DETAY PENCERESİ -->
+<div id="detayModal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="kapat" onclick="detayKapat()">
+            ×
+        </button>
+
+        <div id="detayIcerik"></div>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <div class="logo">
+        BEAUTY<span>BASE</span>
+    </div>
+
+    <p>
+        Premium beauty experience.
+    </p>
+
+    <p class="copyright">
+        © 2026 BeautyBase
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body></html>
