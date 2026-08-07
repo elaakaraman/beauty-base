@@ -48,8 +48,8 @@ function urunleriGoster(liste){
 
             <strong>${urun.fiyat}</strong>
 
-            <button>
-                Detay
+            <button onclick="detayAc('${urun.ad}')">
+             Detay
             </button>
 
         </div>
@@ -99,3 +99,42 @@ function urunAra(){
 
 
 urunleriGoster(urunler);
+function detayAc(ad){
+
+    const urun = urunler.find(
+        item => item.ad === ad
+    );
+
+
+    document.getElementById("detayIcerik").innerHTML = `
+
+        <img src="${urun.resim}" width="300">
+
+        <h2>${urun.ad}</h2>
+
+        <p>
+            Kategori: ${urun.kategori}
+        </p>
+
+        <h3>
+            ${urun.fiyat}
+        </h3>
+
+        <p>
+            BeautyBase özel koleksiyonundan seçilmiş premium ürün.
+        </p>
+
+    `;
+
+
+    document.getElementById("detayModal").style.display="flex";
+
+}
+
+
+
+function detayKapat(){
+
+    document.getElementById("detayModal").style.display="none";
+
+}
