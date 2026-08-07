@@ -1,139 +1,490 @@
-<!DOCTYPE html><html lang="tr"><head>
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BeautyBase | Premium Beauty</title>
 
-<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head><body><!-- ÜST MENÜ -->
-<header>
+    <title>BeautyBase | Premium Beauty</title>
 
-    <div class="logo">
-        BEAUTY<span>BASE</span>
-    </div>
+    <link rel="stylesheet" href="style.css">
 
-    <nav>
-        <a href="#">Ana Sayfa</a>
-        <a href="#urunler">Ürünler</a>
-        <a href="#kategoriler">Kategoriler</a>
-    </nav>
-
-    <div class="arama">
-        <input
-            type="text"
-            id="aramaInput"
-            placeholder="Ürün ara..."
-        >
-
-        <button onclick="urunAra()">Ara</button>
-    </div>
-
-</header>
+</head>
 
 
-<!-- ANA BAŞLIK -->
-<section class="hero">
-
-    <p>BEAUTYBASE COLLECTION</p>
-
-    <h1>
-        Güzelliğin<br>
-        <span>yeni yorumu.</span>
-    </h1>
-
-    <p class="hero-aciklama">
-        Makyaj, cilt bakımı ve güzellik dünyasının
-        seçkin ürünlerini keşfet.
-    </p>
-
-    <a href="#urunler" class="kesfet">
-        ÜRÜNLERİ KEŞFET
-    </a>
-
-</section>
+<body>
 
 
-<!-- KATEGORİLER -->
-<section id="kategoriler" class="kategori-section">
+    <!-- =========================
+         ÜST MENÜ
+    ========================== -->
 
-    <h2>Kategoriler</h2>
+    <header>
 
-    <div class="kategoriler">
+        <!-- LOGO -->
 
-        <button onclick="kategoriFiltrele('Makyaj')">
-            Makyaj
-        </button>
-
-        <button onclick="kategoriFiltrele('Cilt Bakımı')">
-            Cilt Bakımı
-        </button>
-
-        <button onclick="kategoriFiltrele('Parfüm')">
-            Parfüm
-        </button>
-
-        <button onclick="tumUrunleriGoster()">
-            Tüm Ürünler
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- ÜRÜNLER -->
-<main id="urunler">
-
-    <div class="baslik">
-
-        <div>
-            <p>BEAUTYBASE</p>
-            <h2>Öne Çıkan Ürünler</h2>
+        <div class="logo">
+            BEAUTY<span>BASE</span>
         </div>
 
-        <span id="urunSayisi"></span>
+
+        <!-- MENÜ -->
+
+        <nav>
+
+            <a href="#">
+                Ana Sayfa
+            </a>
+
+            <a href="#urunler">
+                Ürünler
+            </a>
+
+            <a href="#kategoriler">
+                Kategoriler
+            </a>
+
+        </nav>
+
+
+        <!-- ARAMA -->
+
+        <div class="arama">
+
+            <input
+                type="text"
+                id="aramaInput"
+                placeholder="Ürün ara..."
+            >
+
+            <button onclick="urunAra()">
+                Ara
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO / ANA TANITIM
+    ========================== -->
+
+    <section class="hero">
+
+
+        <!-- SOL TARAF -->
+
+        <div class="hero-yazi">
+
+            <div class="hero-etiket">
+                BEAUTYBASE EXCLUSIVE
+            </div>
+
+
+            <h1>
+
+                Güzelliğin
+
+                <span>
+                    yeni yorumu.
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                Makyaj ve güzellik dünyasının
+                seçkin ürünlerini keşfet.
+
+            </p>
+
+
+            <a
+                href="#urunler"
+                class="kesfet"
+            >
+
+                KOLEKSİYONU KEŞFET
+
+            </a>
+
+        </div>
+
+
+
+        <!-- SAĞ TARAF / GÖRSEL -->
+
+        <div class="hero-gorsel">
+
+            <img
+                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=90"
+                alt="BeautyBase makyaj koleksiyonu"
+            >
+
+
+            <!-- GÖRSEL ÜZERİNDEKİ KART -->
+
+            <div class="hero-kart">
+
+                <span>
+                    NEW COLLECTION
+                </span>
+
+                <strong>
+                    Beauty Essentials
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         KATEGORİLER
+    ========================== -->
+
+    <section
+        id="kategoriler"
+        class="kategori-section"
+    >
+
+        <div class="section-etiket">
+            BEAUTYBASE
+        </div>
+
+
+        <h2>
+            Kategorileri Keşfet
+        </h2>
+
+
+        <p class="kategori-aciklama">
+
+            Güzellik rutinin için ihtiyacın olan
+            ürünleri keşfet.
+
+        </p>
+
+
+        <div class="kategoriler">
+
+
+            <button
+                onclick="kategoriFiltrele('Makyaj')"
+            >
+
+                <span class="kategori-icon">
+                    ✦
+                </span>
+
+                Makyaj
+
+            </button>
+
+
+            <button
+                onclick="kategoriFiltrele('Cilt Bakımı')"
+            >
+
+                <span class="kategori-icon">
+                    ◇
+                </span>
+
+                Cilt Bakımı
+
+            </button>
+
+
+            <button
+                onclick="kategoriFiltrele('Parfüm')"
+            >
+
+                <span class="kategori-icon">
+                    ♢
+                </span>
+
+                Parfüm
+
+            </button>
+
+
+            <button
+                onclick="tumUrunleriGoster()"
+            >
+
+                <span class="kategori-icon">
+                    ✧
+                </span>
+
+                Tüm Ürünler
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ÜRÜNLER
+    ========================== -->
+
+    <main id="urunler">
+
+
+        <!-- ÜRÜN BAŞLIĞI -->
+
+        <div class="baslik">
+
+
+            <div>
+
+                <div class="section-etiket">
+                    BEAUTYBASE COLLECTION
+                </div>
+
+
+                <h2>
+                    Öne Çıkan Ürünler
+                </h2>
+
+
+                <p class="urun-aciklama">
+
+                    En sevilen güzellik ürünlerini keşfet.
+
+                </p>
+
+            </div>
+
+
+            <span id="urunSayisi">
+                0 ürün
+            </span>
+
+
+        </div>
+
+
+
+        <!-- ÜRÜNLER BURAYA GELECEK -->
+
+        <div
+            id="urunlerContainer"
+            class="urunler-container"
+        >
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         ÜRÜN DETAY PENCERESİ
+    ========================== -->
+
+    <div
+        id="detayModal"
+        class="modal"
+    >
+
+
+        <div class="modal-content">
+
+
+            <!-- KAPAT -->
+
+            <button
+                class="kapat"
+                onclick="detayKapat()"
+            >
+
+                ×
+
+            </button>
+
+
+            <!-- DETAYLAR JS İLE GELECEK -->
+
+            <div id="detayIcerik">
+
+            </div>
+
+
+        </div>
 
     </div>
 
 
-    <div id="urunlerContainer" class="urunler-container">
-    </div>
 
-</main>
+    <!-- =========================
+         NEWSLETTER
+    ========================== -->
 
-
-<!-- DETAY PENCERESİ -->
-<div id="detayModal" class="modal">
-
-    <div class="modal-content">
-
-        <button class="kapat" onclick="detayKapat()">
-            ×
-        </button>
-
-        <div id="detayIcerik"></div>
-
-    </div>
-
-</div>
+    <section class="newsletter">
 
 
-<footer>
-
-    <div class="logo">
-        BEAUTY<span>BASE</span>
-    </div>
-
-    <p>
-        Premium beauty experience.
-    </p>
-
-    <p class="copyright">
-        © 2026 BeautyBase
-    </p>
-
-</footer>
+        <div class="newsletter-icerik">
 
 
-<script src="script.js"></script>
+            <div class="section-etiket">
+                BEAUTYBASE
+            </div>
 
-</body></html>
+
+            <h2>
+                Güzellik dünyasından
+                haberdar ol.
+            </h2>
+
+
+            <p>
+
+                Yeni koleksiyonlar,
+                özel ürünler ve BeautyBase
+                haberlerini keşfet.
+
+            </p>
+
+
+            <div class="newsletter-form">
+
+                <input
+                    type="email"
+                    placeholder="E-posta adresiniz"
+                >
+
+                <button>
+                    KAYDOL
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+
+        <div class="footer-ust">
+
+
+            <!-- LOGO -->
+
+            <div>
+
+                <div class="logo footer-logo">
+
+                    BEAUTY<span>BASE</span>
+
+                </div>
+
+
+                <p>
+
+                    Beauty, elevated.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- FOOTER MENÜ -->
+
+            <div class="footer-menu">
+
+                <h3>
+                    Keşfet
+                </h3>
+
+                <a href="#urunler">
+                    Ürünler
+                </a>
+
+                <a href="#kategoriler">
+                    Kategoriler
+                </a>
+
+                <a href="#">
+                    Yeni Gelenler
+                </a>
+
+            </div>
+
+
+
+            <!-- DESTEK -->
+
+            <div class="footer-menu">
+
+                <h3>
+                    Yardım
+                </h3>
+
+                <a href="#">
+                    İletişim
+                </a>
+
+                <a href="#">
+                    Sık Sorulan Sorular
+                </a>
+
+                <a href="#">
+                    Gizlilik
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-alt">
+
+            <span>
+                © 2026 BeautyBase
+            </span>
+
+            <span>
+                Premium Beauty Experience
+            </span>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
